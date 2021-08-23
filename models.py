@@ -7,7 +7,7 @@ from db_conf import Base
 class Post(Base):
     __tablename__ = "post"
 
-    id = Column(Integer, primary_key=true, index=True)
+    id = Column(Integer, primary_key=True, index=True)
     title = Column(String)
     author = Column(String)
     content = Column(String)
