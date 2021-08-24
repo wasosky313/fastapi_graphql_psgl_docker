@@ -6,7 +6,7 @@ import models
 from db_conf import db_session
 from schemas import PostSchema
 
-db = db_session.session_factory
+db = db_session.session_factory()
 app = FastAPI()
 
 
