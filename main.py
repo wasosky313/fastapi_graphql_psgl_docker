@@ -32,4 +32,4 @@ class PostMutations(graphene.ObjectType):
     create_new_post = CreateNewPost.Field()
 
 
-app.add_route("/graphql", GraphQLApp(schema=graphene.Schema()))
+app.add_route("/graphql", GraphQLApp(schema=graphene.Schema(mutation=PostMutations)))
