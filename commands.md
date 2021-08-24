@@ -12,9 +12,18 @@ mutation CreateNewPost {
   }
 }
 
-# hacer consultas
+# hacer consultas y retorna todo
 query{
   allPosts{
+    title
+    content
+  }
+}
+
+# hacer consulta y retornar por id
+query{
+  postById(postId:2){
+    id
     title
     content
   }
